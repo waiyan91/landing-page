@@ -2,7 +2,8 @@
 AOS.init({
   duration: 800,
   easing: 'ease-in-out',
-  once: true
+  once: true,
+  offset: 100
 });
 
 // Initialize particles.js
@@ -136,10 +137,58 @@ if (contactForm) {
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    navbar.style.backgroundColor = 'var(--bg-color)';
-    navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    navbar.classList.add('scrolled');
   } else {
-    navbar.style.backgroundColor = 'transparent';
-    navbar.style.boxShadow = 'none';
+    navbar.classList.remove('scrolled');
   }
+});
+
+// Animate skill bars on scroll
+const skillBars = document.querySelectorAll('.progress-bar');
+const animateSkillBars = () => {
+  skillBars.forEach(bar => {
+    const barTop = bar.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    
+    if (barTop < windowHeight - 100) {
+      bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+    }
+  });
+};
+
+// Initial check for skill bars
+animateSkillBars();
+
+// Animate skill bars on scroll
+window.addEventListener('scroll', animateSkillBars);
+
+// Add typing effect to hero section
+const heroTitle = document.querySelector('.hero h1');
+if (heroTitle) {
+  const text = heroTitle.textContent;
+  heroTitle.textContent = '';
+  
+  let i = 0;
+  const typeWriter = () => {
+    if (i < text.length) {
+      heroTitle.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100);
+    }
+  };
+  
+  // Start typing effect when page loads
+  window.addEventListener('load', typeWriter);
+}
+
+// Add hover effect to project cards
+const projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transform = 'translateY(-10px)';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0)';
+  });
 }); 
