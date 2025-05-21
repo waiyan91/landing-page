@@ -477,3 +477,41 @@ body {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
+[data-bs-theme="dark"] .timeline-section {
+  background: var(--card-bg);
+}
+[data-bs-theme="dark"] .timeline-content {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+[data-bs-theme="dark"] .timeline-date {
+  color: var(--primary-color);
+}
+[data-bs-theme="dark"] .timeline-dot {
+  background: var(--primary-color);
+  border: 2px solid var(--bg-color);
+}
+[data-bs-theme="dark"] .skills-overview-section {
+  background: var(--bg-color);
+}
+[data-bs-theme="dark"] .skills-overview-section .card {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+[data-bs-theme="dark"] .skills-overview-section h6 {
+  color: var(--primary-color);
+}
+[data-bs-theme="dark"] .fun-facts-section {
+  background: var(--card-bg);
+}
+[data-bs-theme="dark"] .fun-facts-section .card {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+[data-bs-theme="dark"] .fun-facts-section i {
+  color: var(--primary-color);
+}
+[data-bs-theme="dark"] .fun-facts-section h6 {
+  color: var(--primary-color);
+}
