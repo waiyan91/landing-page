@@ -364,3 +364,36 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* Hobbies & Interests Section */
+.hobbies-section {
+  background: var(--bg-color);
+}
+
+.hobby-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.hobby-card i {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.hobby-card h5 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hobby-card p {
+  color: var(--text-color);
+  opacity: 0.85;
+  font-size: 1rem;
+}
