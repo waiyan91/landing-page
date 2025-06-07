@@ -6,74 +6,7 @@ AOS.init({
   offset: 100
 });
 
-// Initialize particles.js
-particlesJS('particles-js', {
-  particles: {
-    number: {
-      value: 80,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    },
-    color: {
-      value: '#ffffff'
-    },
-    shape: {
-      type: 'circle'
-    },
-    opacity: {
-      value: 0.5,
-      random: false
-    },
-    size: {
-      value: 3,
-      random: true
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#ffffff',
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false
-    }
-  },
-  interactivity: {
-    detect_on: 'canvas',
-    events: {
-      onhover: {
-        enable: true,
-        mode: 'grab'
-      },
-      onclick: {
-        enable: true,
-        mode: 'push'
-      },
-      resize: true
-    },
-    modes: {
-      grab: {
-        distance: 140,
-        line_linked: {
-          opacity: 1
-        }
-      },
-      push: {
-        particles_nb: 4
-      }
-    }
-  },
-  retina_detect: true
-});
+// Removed particles.js initialization
 
 // Dark mode toggle
 const themeToggle = document.getElementById('themeToggle');
@@ -143,24 +76,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Animate skill bars on scroll
-const skillBars = document.querySelectorAll('.progress-bar');
-const animateSkillBars = () => {
-  skillBars.forEach(bar => {
-    const barTop = bar.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    
-    if (barTop < windowHeight - 100) {
-      bar.style.width = bar.getAttribute('aria-valuenow') + '%';
-    }
-  });
-};
-
-// Initial check for skill bars
-animateSkillBars();
-
-// Animate skill bars on scroll
-window.addEventListener('scroll', animateSkillBars);
+// Removed skill bar animations (no longer using progress bars)
 
 // Add typing effect to hero section
 const heroTitle = document.querySelector('.hero h1');
@@ -181,14 +97,4 @@ if (heroTitle) {
   window.addEventListener('load', typeWriter);
 }
 
-// Add hover effect to project cards
-const projectCards = document.querySelectorAll('.project-card');
-projectCards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = 'translateY(-10px)';
-  });
-  
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'translateY(0)';
-  });
-}); 
+// Project card hover effects are now handled by CSS 

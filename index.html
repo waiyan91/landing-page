@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Wai Yan Myint Thein - Software Engineering Student</title>
   <!-- Bootstrap CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Font Awesome -->
@@ -16,7 +16,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="#">Wai Yan</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,13 +26,16 @@
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <button class="btn btn-theme-toggle" id="themeToggle">
@@ -46,24 +49,45 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div id="particles-js"></div>
     <div class="container">
       <div class="hero-content" data-aos="fade-up">
-        <div class="profile-image mb-4">
-          <img src="https://via.placeholder.com/150" alt="Your Name" class="rounded-circle" />
-        </div>
-        <h1 class="display-4">Hi, I'm <span class="highlight">Your Name</span></h1>
-        <p class="lead">Software Engineer & Web Developer</p>
-        <p class="hero-description">I build modern, responsive, and user-friendly web applications. Passionate about creating elegant solutions to complex problems.</p>
+        <div class="hello-text">Hello</div>
+        <div class="name-intro">My name is</div>
+        <h1 class="display-4"><span class="highlight">WAI YAN MYINT THEIN</span></h1>
+        <p class="hero-subtitle">Software Engineering Student Full of Depressed Brain Cells - Building Tomorrow's Software Today.</p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+          <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
           <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
         </div>
-        <div class="social-links mt-4">
-          <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <div class="social-links">
+          <a href="https://github.com/waiyan91" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:waiyan@depressedbraincells.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" data-aos="fade-up">
+          <div class="about-content">
+            <h2 class="section-title">About</h2>
+            <p>I'm a Software Engineering student with a passion for learning and building innovative software solutions. My journey is fueled by curiosity and a love for problem-solving through code.</p>
+            <p>When I'm not coding, you'll find me diving into manga worlds, laughing at Korean variety shows (especially Running Man), or getting lost in anime adventures. I believe in balancing the logical side of programming with creative interests that keep me inspired.</p>
+            <p>I'm constantly learning new technologies and approaches to software development, always eager to take on challenges that push my skills further. My goal is to create software that makes a real impact while having fun along the way.</p>
+            <p><strong>I'm Wai Yan, and I'm ready to bring fresh ideas to your next project.</strong></p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="personality-tags">
+            <div class="personality-tag">Anime Enthusiast</div>
+            <div class="personality-tag">Manga Reader</div>
+            <div class="personality-tag">Running Man Fan</div>
+            <div class="personality-tag">Code Explorer</div>
+            <div class="personality-tag">Depressed Brain Cell</div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,196 +96,106 @@
   <!-- Skills Section -->
   <section id="skills" class="skills-section py-5">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="skill-category">
-            <h3>Frontend Development</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="skill-name">HTML5</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 95%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">CSS3/SASS</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">JavaScript</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">React</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 80%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
         </div>
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="skill-category">
-            <h3>Backend Development</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="skill-name">Node.js</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">Python</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">SQL</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-name">MongoDB</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 70%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hobbies & Interests Section -->
-  <section id="hobbies" class="hobbies-section py-5">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Hobbies & Interests</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="hobby-card">
-            <i class="fas fa-music fa-2x mb-3"></i>
-            <h5>Music</h5>
-            <p>I love listening to and creating music, especially lo-fi and indie genres.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="hobby-card">
-            <i class="fas fa-gamepad fa-2x mb-3"></i>
-            <h5>Gaming</h5>
-            <p>I'm passionate about video games, from story-driven adventures to competitive esports.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="hobby-card">
-            <i class="fas fa-book fa-2x mb-3"></i>
-            <h5>Reading</h5>
-            <p>I enjoy reading books and articles on technology, psychology, and science fiction.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
         </div>
-      </div>
-      <div class="row g-4 mt-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="hobby-card">
-            <i class="fas fa-hiking fa-2x mb-3"></i>
-            <h5>Hiking</h5>
-            <p>Exploring nature and hiking trails helps me relax and recharge.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <i class="fas fa-database"></i>
+          <span>SQL</span>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="hobby-card">
-            <i class="fas fa-camera fa-2x mb-3"></i>
-            <h5>Photography</h5>
-            <p>I love capturing moments and landscapes through my camera lens.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fab fa-linux"></i>
+          <span>Linux</span>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="hobby-card">
-            <i class="fas fa-code fa-2x mb-3"></i>
-            <h5>Coding for Fun</h5>
-            <p>Building side projects and experimenting with new tech stacks is a favorite pastime.</p>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+          <i class="fas fa-code"></i>
+          <span>Algorithms</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-5">
+  <section id="projects" class="projects-section py-5">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">My Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="btn btn-light btn-sm"><i class="fab fa-github"></i></a>
-                  <a href="#" class="btn btn-light btn-sm"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h5>Project One</h5>
-              <p>Short description of what the project does and tools used.</p>
-              <div class="project-tags">
-                <span class="badge">React</span>
-                <span class="badge">Node.js</span>
-                <span class="badge">MongoDB</span>
-              </div>
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-info">
+            <h3>Chess Game</h3>
+            <p>A modern browser-based chess game built with vanilla JavaScript featuring online multiplayer, AI bot opponents with configurable difficulty, and real-time analysis. Includes complete chess rules implementation, responsive design, and WebSocket-based multiplayer with private room codes.</p>
+            <div class="project-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">WebSocket</span>
+              <span class="tech-tag">Node.js</span>
             </div>
           </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="https://via.placeholder.com/400x200" alt="Project 2" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="btn btn-light btn-sm"><i class="fab fa-github"></i></a>
-                  <a href="#" class="btn btn-light btn-sm"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h5>Project Two</h5>
-              <p>Another cool project that shows your skills and creativity.</p>
-              <div class="project-tags">
-                <span class="badge">JavaScript</span>
-                <span class="badge">CSS</span>
-                <span class="badge">HTML</span>
-              </div>
-            </div>
+          <div class="project-preview">
+            <img src="https://via.placeholder.com/400x300" alt="Chess Game" />
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="https://via.placeholder.com/400x200" alt="Project 3" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="btn btn-light btn-sm"><i class="fab fa-github"></i></a>
-                  <a href="#" class="btn btn-light btn-sm"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-              </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-info">
+            <h3>Anime Tracker</h3>
+            <p>A personal anime tracking application that helps organize watched series, planned watchlists, and ratings. Features include search functionality, episode progress tracking, and integration with anime databases. Perfect for keeping track of all those manga adaptations!</p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQLite</span>
             </div>
-            <div class="project-content">
-              <h5>Project Three</h5>
-              <p>A brief summary of your third project and what it achieves.</p>
-              <div class="project-tags">
-                <span class="badge">Python</span>
-                <span class="badge">Django</span>
-                <span class="badge">PostgreSQL</span>
-              </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://via.placeholder.com/400x300" alt="Anime Tracker" />
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-info">
+            <h3>Algorithm Visualizer</h3>
+            <p>An interactive web application that visualizes sorting and searching algorithms step-by-step. Built to help understand algorithm complexity and behavior, featuring animated demonstrations of bubble sort, merge sort, binary search, and more. Great for studying data structures and algorithms!</p>
+            <div class="project-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML Canvas</span>
+              <span class="tech-tag">CSS</span>
             </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://via.placeholder.com/400x300" alt="Algorithm Visualizer" />
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-info">
+            <h3>Study Buddy</h3>
+            <p>A productivity application designed for students to manage study sessions, track progress, and set goals. Features include Pomodoro timer, note-taking capabilities, and progress analytics. Built during my software engineering studies to solve real student problems!</p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">JSON</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://via.placeholder.com/400x300" alt="Study Buddy" />
           </div>
         </div>
       </div>
@@ -271,25 +205,23 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="contact-content">
+        <div class="contact-intro" data-aos="fade-up">
+          <h2>Excited to know more?</h2>
+          <h3>Let's talk!</h3>
+        </div>
+        <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="100">
           <form class="contact-form">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="name" placeholder="Your name" />
-              <label for="name">Name</label>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Name" required />
             </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Your email" />
-              <label for="email">Email</label>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email" required />
             </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" placeholder="Your message" style="height: 150px"></textarea>
-              <label for="message">Message</label>
+            <div class="form-group">
+              <textarea class="form-control" id="message" placeholder="Message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100">
-              <i class="fas fa-paper-plane me-2"></i>Send Message
-            </button>
+            <button type="submit" class="btn btn-primary">Send</button>
           </form>
         </div>
       </div>
@@ -299,16 +231,16 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="footer-quote">
+        <p>"Coding with depressed brain cells, but the code still compiles! 🧠💻"</p>
+      </div>
+      <div class="footer-content">
+        <div class="footer-copyright">
           <p>&copy; 2025 Depressed Brain Cells. All rights reserved.</p>
         </div>
-        <div class="col-md-6 text-end">
-          <div class="social-links">
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          </div>
+        <div class="footer-social">
+          <a href="https://github.com/waiyan91" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="mailto:waiyan@depressedbraincells.com" class="social-icon"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -317,7 +249,6 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
